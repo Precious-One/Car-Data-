@@ -1,6 +1,7 @@
 # Car-Data 🚗
 Repository is all about Linear Regression and Logistic Regression. Linear Regression helps you to train data and predict price accordingly. Logistic Regression helps to predict wheather car is 4WD, FWD, RWD
 
+In Logistic Regression,
 There are 2 types of Encoding you can use :
 * Type 1 -
 df['fueltypes'].replace({'diesel':1, 'gas':2})
@@ -20,3 +21,4 @@ df1_lg = pd.get_dummies(df1,columns=cat,drop_first =True)
 Both works fine.
 
 Also I used StandardScaler because I'm comfortable with it, you can also try out MinMaxScaler.
+at last you will see 3x3 confusion matrix. We have 3 unique categorical values present i.e 4wd,fwd,rwd so, it is 3x3. 
